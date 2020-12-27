@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(./images/n1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./images/n2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./images/n3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./images/n4.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./images/n5.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./images/n6.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./images/n7.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./images/n8.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./images/n9.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./images/n10.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+        </div>
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+          
+          loop:'true',
+        });
+      </script>
+</body>
+</html>
